@@ -1,12 +1,13 @@
 import React from 'react';
 
-const Section = ({ id, backgroundColor, title, content }) => {
+const Section = ({ id, backgroundColor, title, content, fontSize, titleTwo, footer }) => {
   return (
     <section id={id} style={{ backgroundColor, padding: '4rem 0', textAlign: 'center' }}>
-      <div style={{ width: '100%', margin: '0 auto', padding: '0 1rem' }}>
-        <h2>{title}</h2>
-        <p>{content}</p>
+      <div className="section-container">
+        <div style={{ fontSize, fontFamily: "Optimistic Display,-apple-system,ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji" }}><span style={{ fontWeight: "bold" }}>{title}</span> {titleTwo}</div>
+        <p style={{ fontSize: "1.2rem" }}>{content}</p>
       </div>
+      <footer>{footer}</footer>
     </section>
   );
 };

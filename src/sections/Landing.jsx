@@ -4,6 +4,9 @@ import Logo from '../../public/logo.webp'
 import { useNavigate } from 'react-router-dom'
 
 import Card from '../components/Card'
+import Section from '../components/Section'
+
+import reactLogo from '../assets/react.svg'
 
 const Landing = () => {
 
@@ -30,15 +33,30 @@ const Landing = () => {
       </div>
 
       <div ref={explanationRef}>
-        <h2>How a site is produced (by the developer)</h2>
+
+        <Section 
+          fontSize="2.5em"
+          title="Discover"
+          titleTwo="all of my projects"
+          backgroundColor="#ECEFF1"
+          content={<><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome! </>}
+          footer={(<><button className='project-btn' onClick={() => navigate('/pages')}>See all of my projects</button></>)}
+        />
+
+
+        {/* <h2>How a site is produced (by the developer)</h2>
         <div style={{ padding: "17px" }}></div>
         <div className="card-grid-double">
           <Card heading="Step 1 - Idea" desc="It all starts with an inspiration, or idea that makes its way to the developer's mind. The first match that is lit in box of matches. This can range from anything, like a doodle, schoolwork, or out of boredom." classes="orange-red"/>
           <Card heading="Step 2 - Design" desc="The idea formulates to a plan, where a very brief design and logic of a website starts to form. This step could also include searching for similar sites to use as a reference. " classes="reddish-brown"/>
           <Card heading="Step 3 - Code" desc="Once a reference and design is completed, a website structure will be constructed. The most common language used in these projects are React.js. This step is the longest step of all of them and therefore requries more attention and resources." classes="blueish"/>
           <Card heading="Step 4 - Deploy" desc="A website has been built, tested, will be deployed onto GitHub, where using Cloudflare or other DNS sites, it is paired with a domain name and published online for the public's eyes. This is the time where a project will most likely show up here and marked as done." classes="green"/>
-        </div>
+        </div> */}
       </div>
+
+      <Section 
+        backgroundColor="#DEE3E6"
+      />
     </>
   )
 }
