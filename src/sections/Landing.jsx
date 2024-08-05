@@ -8,6 +8,8 @@ import Section from '../components/Section'
 
 import reactLogo from '../assets/react.svg'
 
+import Footer from '../components/Foot'
+
 const Landing = () => {
 
   const navigate = useNavigate();
@@ -54,9 +56,23 @@ const Landing = () => {
         </div> */}
       </div>
 
-      <Section 
+      <Section
+        fontSize="2.5em"
+        title="Learn"
+        titleTwo="new skills"
         backgroundColor="#DEE3E6"
+        content={<>Learn as you explore how I do my projects, and make them better. You can access my open-source code anywhere* and use them as reference. <br /> <br /><div style={{ fontSize: '0.7em' }}>*as long as the network you are on is not blocking the platform.</div></>}
       />
+
+      <Section 
+        fontSize="2.5em"
+        title="Explore"
+        titleTwo="your ideas"
+        backgroundColor="#CCD4D9"
+        content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
+      />
+
+      <Footer />
     </>
   )
 }

@@ -23,8 +23,8 @@
   width:100vw;
 }
 
-.project-btn:hover {
-  transition:0.3s ease-in-out;
+.project-btn {
+  transition:0.3s ease-in;
 }
 
 .project-btn:hover {
