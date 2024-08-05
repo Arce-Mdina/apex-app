@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
   return (
     <footer style={styles.footer}>
-      <div style={styles.column}>
+{/*       <div style={styles.column}>
         <h3 style={styles.heading}>Developer's Name</h3>
         <p>Bill</p>
       </div>
@@ -14,7 +14,7 @@ function Footer() {
             william@redhill.space
           </a>
         </p>
-      </div>
+      </div> */}
       <div style={styles.column}>
         <h3 style={styles.heading}>Source Code</h3>
         <p>
