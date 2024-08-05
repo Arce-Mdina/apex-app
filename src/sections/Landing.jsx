@@ -3,7 +3,6 @@ import Logo from '../../public/logo.webp'
 
 import { useNavigate } from 'react-router-dom'
 
-import Card from '../components/Card'
 import Section from '../components/Section'
 
 import reactLogo from '../assets/react.svg'

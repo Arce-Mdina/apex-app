@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.domain {
+  width:70vw;
+}
+
 .section-container {
   width: 42%;
   margin: 0 auto;
