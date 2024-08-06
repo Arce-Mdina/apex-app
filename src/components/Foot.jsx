@@ -3,18 +3,6 @@ import React from 'react';
 function Footer() {
   return (
     <footer style={styles.footer}>
-{/*       <div style={styles.column}>
-        <h3 style={styles.heading}>Developer's Name</h3>
-        <p>Bill</p>
-      </div>
-      <div style={styles.column}>
-        <h3 style={styles.heading}>Contact Email</h3>
-        <p>
-          <a href="mailto:william@redhill.space" style={styles.link}>
-            william@redhill.space
-          </a>
-        </p>
-      </div> */}
       <div style={styles.column}>
         <h3 style={styles.heading}>Source Code</h3>
         <p>
