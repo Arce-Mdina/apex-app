@@ -8,6 +8,8 @@ import ScrollToTop from './components/ScrollToTop'
 import NotFound from './sections/NotFound';
 import HomeButton from './components/HomeButton';
 
+import { Analytics } from "@vercel/analytics/react"
+
 // Sections
 import Landing from './sections/Landing';
 import Pages from './sections/Pages';
@@ -44,6 +46,7 @@ const App = () => {
     <>
       <BrowserRouter basename="/">
         <ScrollToTop />
+        <Analytics />
         <RouterConfig />
       </BrowserRouter>
     </>
