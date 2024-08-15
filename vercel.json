@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/(.*)",
-      "destination": "https://your-custom-domain.com/$1",
+      "destination": "https://filfoletta.eu/$1",
       "permanent": true
     }
   ]
