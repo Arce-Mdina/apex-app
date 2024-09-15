@@ -13,7 +13,6 @@ import { Analytics } from "@vercel/analytics/react"
 // Sections
 import Landing from './sections/Landing';
 import Pages from './sections/Pages';
-import Domain from './sections/Domain'
 
 const RouterConfig = () => {
   const routes = [
@@ -28,7 +27,6 @@ const RouterConfig = () => {
           <HomeButton />
           <div className="content">
             {useRoutes([
-              { path: '/domain-history', element: <Domain /> },
               { path: '/pages', element: <Pages /> },
               { path: '*', element: <NotFound /> },
             ])}

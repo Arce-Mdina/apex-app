@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import Logo from '../../public/logo.webp'
 
 import { useNavigate } from 'react-router-dom'
@@ -8,6 +8,8 @@ import Section from '../components/Section'
 import reactLogo from '../assets/react.svg'
 
 import Footer from '../components/Foot'
+
+import Overlay from '../components/Overlay'
 
 const Landing = () => {
 
@@ -20,18 +22,45 @@ const Landing = () => {
     explanationRef.current.scrollIntoView({ behavior: 'smooth' });
   };
 
+  const [domainOverlay, setDomainOverlay] = useState(false)
+
+  {/* Domain */}
+  const openDomainOverlay = () => {
+    setDomainOverlay(true);
+  }
+
+  const closeDomainOverlay = () => {
+    setDomainOverlay(false);
+  }
+
   return (
     <>
       <div className="header">
         <img src={Logo} className="logo-img"/>
         <h1>Welcome to <span style={{ color: "brown" }}>Filfoletta.eu</span>!</h1>
-        {/* <h2>The website where all your dreams come true!!!</h2> */}
         <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond" }}>Discover my journey through innovative projects and creative explorations, all crafted from the heart of Europe.</h2>
         <div className="title-btns">
           <button className="link-btn link-1" onClick={scrollToExplanation}>Learn more</button>
-          <button className="link-btn link-2" onClick={() => navigate('/domain-history')}>Why filfoletta?</button>
+          <button className="link-btn link-2" onClick={openDomainOverlay}>Why filfoletta?</button>
+          
         </div>
       </div>
+
+      <Overlay
+        heading={<>Why I chose <span style={{ color: "brown" }}>Filfoletta.eu</span></>}
+        type={domainOverlay}
+        
+        closeFunc={closeDomainOverlay}
+        content={
+          <>
+            <div>
+              <div>
+                <p>I chose the domain name filfoletta.eu because it has a unique and memorable quality that stands out. Its distinctiveness makes it easy for people to recall, and the playful tone adds a fun element that reflects the personality and energy behind the brand. The name encapsulates both creativity and simplicity, making it the perfect fit.</p>
+              </div>
+            </div>
+          </>
+        }
+      />
 
       <div ref={explanationRef}>
 
@@ -40,8 +69,8 @@ const Landing = () => {
           title="Discover"
           titleTwo="all of my projects"
           backgroundColor="#ECEFF1"
-          content={<><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome! </>}
-          footer={(<><button className='project-btn' onClick={() => navigate('/pages')}>See all of my projects</button></>)}
+          content={<><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome!</>}
+          footer={(<><br></br><button className='project-btn' onClick={() => navigate('/pages')}>See all of my projects</button></>)}
         />
 
 
