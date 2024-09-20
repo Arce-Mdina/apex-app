@@ -242,6 +242,10 @@
   .section-container {
     width: 80%;
   }
+
+  .project-heading {
+    padding-top:10vh;
+  }
 }
 
 @media (max-width:500px) {
@@ -259,9 +263,7 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .project-heading {
-    padding-top:10vh;
-  }
+  
 }
 
 
