@@ -8,7 +8,8 @@ const NotFound = () => {
 
   return (
     <>
-      <div><h1>The page you were looking for is not found. Please click the button below to go to the Home Page or click the Back Button.</h1></div>
+      <div><h1>The page you were looking for does not exist.</h1></div>
+      <p>Please click the button below to go to the Home Page or click the Back Button.</p>
       <button onClick={() => navigate('/')}>Go Home</button>
     </>
   )

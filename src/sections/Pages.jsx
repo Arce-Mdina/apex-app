@@ -9,7 +9,7 @@ const Pages = () => {
   return (
     <div>
       {/* <Card /> */}
-      <h1><span style={{ color: "brown" }}>Filfoletta.eu</span>'s Projects</h1>
+      <h1 className="project-heading"><span style={{ color: "brown" }}>Filfoletta.eu</span>'s Projects</h1>
       <div className="card-grid-triple">
         <Card 
           link="https://malta-guide.filfoletta.eu"

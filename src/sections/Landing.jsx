@@ -70,7 +70,7 @@ const Landing = () => {
           titleTwo="all of my projects"
           backgroundColor="#ECEFF1"
           content={<><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome!</>}
-          footer={(<><br></br><button className='project-btn' onClick={() => navigate('/pages')}>See all of my projects</button></>)}
+          footer={(<><br></br><button className='project-btn' onClick={() => navigate('/projects')}>See all of my projects</button></>)}
         />
 
 

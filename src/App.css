@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.project-heading {
+  padding-top:1vh;
+}
+
 .overlay-background {
   position: fixed;
   top: 0;
@@ -253,6 +257,10 @@
 @media (max-width:425px) {
   .card-grid-triple {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-heading {
+    padding-top:10vh;
   }
 }
 
