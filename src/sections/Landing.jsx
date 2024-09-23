@@ -54,7 +54,7 @@ const Landing = () => {
         content={
           <>
             <div>
-              <div>
+              <div style={{ color: "#374a5aff" }}>
                 <p>I chose the domain name filfoletta.eu because it has a unique and memorable quality that stands out. Its distinctiveness makes it easy for people to recall, and the playful tone adds a fun element that reflects the personality and energy behind the brand. The name encapsulates both creativity and simplicity, making it the perfect fit.</p>
               </div>
             </div>
@@ -66,10 +66,11 @@ const Landing = () => {
 
         <Section 
           fontSize="2.5em"
+          color="#374a5aff"
           title="Discover"
           titleTwo="all of my projects"
           backgroundColor="#ECEFF1"
-          content={<><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome!</>}
+          content={<><br></br><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome!</>}
           footer={(<><br></br><button className='project-btn' onClick={() => navigate('/projects')}>See all of my projects</button></>)}
         />
 
@@ -86,6 +87,7 @@ const Landing = () => {
 
       <Section
         fontSize="2.5em"
+        color="#374a5aff"
         title="Learn"
         titleTwo="new skills"
         backgroundColor="#DEE3E6"
@@ -94,6 +96,7 @@ const Landing = () => {
 
       <Section 
         fontSize="2.5em"
+        color="#374a5aff"
         title="Explore"
         titleTwo="your ideas"
         backgroundColor="#CCD4D9"

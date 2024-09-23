@@ -97,6 +97,7 @@
 }
 
 .project-btn:hover {
+  color:#374a5aff;
   background-color: rgb(209, 243, 255);
 }
 
@@ -159,6 +160,7 @@
 }
 
 .link-2:hover {
+  color:black;
   background-color:rgb(221, 221, 221);
 }
 

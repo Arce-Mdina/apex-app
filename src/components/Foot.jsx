@@ -13,7 +13,7 @@ function Footer() {
             style={styles.link}
           >
             GitHub Repository
-            (Re-publication Date: 20th September 2024)
+            (Re-publication Date: 23rd September 2024)
           </a>
         </p>
       </div>
@@ -41,6 +41,7 @@ const styles = {
   link: {
     color: '#007bff',
     textDecoration: 'none',
+    fontWeight: "bold",
   },
 };
 
