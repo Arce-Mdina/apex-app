@@ -103,6 +103,14 @@ const Landing = () => {
         content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
       />
 
+      {/* <Section 
+        fontSize="2.5em"
+        color="#374a5aff"
+        title="And if you came for information about Fifoletta..."
+        backgroundColor="#CCD4D9"
+        content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
+      /> */}
+
       <Footer />
     </>
   )
