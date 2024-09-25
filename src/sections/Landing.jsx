@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import Logo from '../../public/logo.ico'
+import Logo from '../../public/logo.webp'
 
 import { useNavigate } from 'react-router-dom'
 
