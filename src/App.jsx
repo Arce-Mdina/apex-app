@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css'
 
-import { BrowserRouter, useRoutes } from 'react-router-dom'
+import { BrowserRouter, useRoutes, Navigate } from 'react-router-dom'
 
 // Components
 import ScrollToTop from './components/ScrollToTop'
@@ -13,6 +13,7 @@ import { Analytics } from "@vercel/analytics/react"
 // Sections
 import Landing from './sections/Landing';
 import Pages from './sections/Pages';
+import Islet from './sections/Islet';
 
 const RouterConfig = () => {
   const routes = [
@@ -28,6 +29,9 @@ const RouterConfig = () => {
           <div className="content">
             {useRoutes([
               { path: '/projects', element: <Pages /> },
+              { path: '/filfoletta-islet', element: <Navigate to="/filfoletta-islet" />  },
+              { path: '/filfoletta-island', element: <Navigate to="/filfoletta-islet" /> },
+              { path: '/filfoletta', element: <Islet />},
               { path: '*', element: <NotFound /> },
             ])}
           </div>

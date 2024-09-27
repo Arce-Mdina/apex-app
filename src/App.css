@@ -11,6 +11,69 @@
   text-align: center;
 }
 
+.bg-card-layout {
+  display: flex;
+  flex-direction: column; /* Stack the cards vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.city-card {
+  position: relative;
+  border-radius: 16px;
+  border: 0.1px solid gray;
+  width: 60vw;
+  margin-bottom: 25px;
+  height:300px;
+  cursor: pointer;
+  overflow: hidden; /* To clip the cover to the card's border radius */
+  transition: 0.3s ease-in;
+  /* display:flex; */
+
+  background-size: cover; /* Ensures the background image covers the card area */
+  background-position:top center; /* Centers the image within the card */
+  background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+.city-card:hover {
+  box-shadow: 5px 10px 15px rgb(20, 135, 207);
+}
+
+.city-card .image {
+  width:60vw;
+  border-radius: 16px; /* Match the card's border radius */
+}
+
+.city-card .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.436); /* Semi-transparent dark cover */
+  border-radius: 16px; /* Match the card's border radius */
+}
+
+.city-card-content {
+  position: absolute; /* To position it over the cover */
+  bottom: 10px;
+  margin: 0;
+  left:20px;
+  z-index: 1; /* Bring the heading in front of the cover */
+  text-align: left;
+  /* overflow-y: auto; */
+  /* border:1px solid black; */
+}
+
+.city-card-content h2 {
+  color: white; /* Ensure text is visible */
+  font-size:2.5em;
+  margin-top:0px;
+  margin-bottom:5px;
+}
+
 .project-heading {
   padding-top:1vh;
 }
@@ -92,12 +155,21 @@
   width:100vw;
 }
 
+.island-btn {
+  color:black;
+  transition:0.3s ease-in;
+}
+
+.island-btn:hover {
+  background-color: rgb(209, 255, 219);
+}
+
 .project-btn {
+  color:black;
   transition:0.3s ease-in;
 }
 
 .project-btn:hover {
-  color:#374a5aff;
   background-color: rgb(209, 243, 255);
 }
 

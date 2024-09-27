@@ -103,13 +103,18 @@ const Landing = () => {
         content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
       />
 
-      {/* <Section 
+      <Section 
         fontSize="2.5em"
-        color="#374a5aff"
-        title="And if you came for information about Fifoletta..."
-        backgroundColor="#CCD4D9"
-        content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
-      /> */}
+        color="white"
+        titleTwo="And if you came for information about Fifoletta..."
+        backgroundColor="maroon"
+        footer={
+          <>
+            <br></br>
+            <button className="island-btn" onClick={() => navigate('/filfoletta')}>Then click here to learn about Filfoletta Islet!</button>
+          </>
+        }
+      />
 
       <Footer />
     </>
