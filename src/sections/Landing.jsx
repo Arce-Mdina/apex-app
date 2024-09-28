@@ -106,7 +106,7 @@ const Landing = () => {
       <Section 
         fontSize="2.5em"
         color="white"
-        titleTwo="And if you came for information about Fifoletta..."
+        titleTwo="And if you came for information about Filfoletta..."
         backgroundColor="maroon"
         footer={
           <>
