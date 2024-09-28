@@ -13,7 +13,7 @@ function Footer() {
             style={styles.link}
           >
             GitHub Repository
-            (Re-publication Date: 27th September 2024)
+            (Re-publication Date: 28th September 2024)
           </a>
         </p>
       </div>

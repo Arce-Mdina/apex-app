@@ -14,6 +14,7 @@ import { Analytics } from "@vercel/analytics/react"
 import Landing from './sections/Landing';
 import Pages from './sections/Pages';
 import Islet from './sections/Islet';
+import Sources from './sections/Sources';
 
 const RouterConfig = () => {
   const routes = [
@@ -32,6 +33,7 @@ const RouterConfig = () => {
               { path: '/filfoletta-islet', element: <Navigate to="/filfoletta-islet" />  },
               { path: '/filfoletta-island', element: <Navigate to="/filfoletta-islet" /> },
               { path: '/filfoletta', element: <Islet />},
+              { path: '/sources', element: <Sources />},
               { path: '*', element: <NotFound /> },
             ])}
           </div>
