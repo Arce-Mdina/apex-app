@@ -67,7 +67,7 @@ const Islet = () => {
             />
 
             <BgCard 
-                image="https://www.shutterstock.com/image-photo/filfla-island-seen-area-blue-260nw-654454537.jpg"
+                image="https://live.staticflickr.com/2927/14051058577_fcf26d691a_b.jpg"
                 heading="How can I get to Filfoletta?"
                 func={() => open('https://www.ecomarinemalta.com.mt/tours/filfla-tour/', '_blank')}
             />

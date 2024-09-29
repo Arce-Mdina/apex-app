@@ -68,7 +68,7 @@ const Landing = () => {
           fontSize="2.5em"
           color="#374a5aff"
           title="Discover"
-          titleTwo="all of my projects"
+          titleTwo={<>our <span style={{ color: "#265573ff", fontWeight: "500" }}>network</span></>}
           backgroundColor="#ECEFF1"
           content={<><br></br><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome!</>}
           footer={(<><br></br><button className='project-btn' onClick={() => navigate('/projects')}>See all of my projects</button></>)}

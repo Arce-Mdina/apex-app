@@ -11,6 +11,15 @@
   text-align: center;
 }
 
+.projects-page {
+  display: flex;
+  flex-direction: column; /* Stack the cards vertically */
+  justify-content: center;
+  align-items: center;
+  width: 75vw;
+  height: 100%;
+}
+
 .source-list {
   list-style: none;
 
@@ -328,6 +337,16 @@
     border-radius:17px;
     font-size:17px;
   }
+
+  .projects-page {
+    width:85vw;
+  }
+
+  .back-button {
+    position: absolute;
+  }
+
+
 }
 
 @media (max-width: 600px) {
