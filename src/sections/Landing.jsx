@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 
 import Section from '../components/Section'
 
-// import reactLogo from '../assets/react.svg'
+import net from '../assets/network.webp'
 // <img src={reactLogo} style={{ width: "100px" }}/>
 
 import Footer from '../components/Foot'
@@ -75,10 +75,11 @@ const Landing = () => {
           backgroundColor="#ECEFF1"
           content={
             <div>
-              <span style={{ fontSize: "150px", lineHeight: "0.8", color: "dodgerblue", display: "inline-block", overflow: "hidden", }}>
+              {/* <span style={{ fontSize: "150px", lineHeight: "0.8", color: "dodgerblue", display: "inline-block", overflow: "hidden", }}>
                 &#9881;
-              </span>
-              <Padding padding="7px"/>
+              </span> */}
+              <img src={net} style={{ width: "100px" }}/>
+              <Padding padding="3px"/>
               <div>
                 All of my projects will be displayed here so you can take inspiration and build your own! 
                 Not all of them are about programming so anyone is welcome!
