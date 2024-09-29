@@ -12,11 +12,12 @@
 }
 
 .projects-page {
+  margin:0 auto;
   display: flex;
   flex-direction: column; /* Stack the cards vertically */
   justify-content: center;
   align-items: center;
-  width: 75vw;
+  width: 80vw;
   height: 100%;
 }
 
@@ -263,6 +264,7 @@
 }
 
 .visit-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 0.2px solid rgb(197, 197, 197);
@@ -360,6 +362,10 @@
 
   .section-container {
     width: 80%;
+  }
+
+  .projects-page {
+    width:95%;
   }
 
   .project-heading {
