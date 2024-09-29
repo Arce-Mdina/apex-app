@@ -5,9 +5,12 @@ import { useNavigate } from 'react-router-dom'
 
 import Section from '../components/Section'
 
-import reactLogo from '../assets/react.svg'
+// import reactLogo from '../assets/react.svg'
+// <img src={reactLogo} style={{ width: "100px" }}/>
 
 import Footer from '../components/Foot'
+
+import Padding from '../components/Padding'
 
 import Overlay from '../components/Overlay'
 
@@ -70,7 +73,18 @@ const Landing = () => {
           title="Discover"
           titleTwo={<>our <span style={{ color: "#265573ff", fontWeight: "500" }}>network</span></>}
           backgroundColor="#ECEFF1"
-          content={<><br></br><img src={reactLogo} style={{ width: "100px" }}/> <br /> <br></br> All of my projects will be displayed here so you can take inspiration and build your own! Not all of them are about programming so anyone is welcome!</>}
+          content={
+            <div>
+              <span style={{ fontSize: "150px", lineHeight: "0.8", color: "dodgerblue", display: "inline-block", overflow: "hidden", }}>
+                &#9881;
+              </span>
+              <Padding padding="7px"/>
+              <div>
+                All of my projects will be displayed here so you can take inspiration and build your own! 
+                Not all of them are about programming so anyone is welcome!
+              </div>
+            </div>
+          }
           footer={(<><br></br><button className='project-btn' onClick={() => navigate('/projects')}>See all of my projects</button></>)}
         />
 
