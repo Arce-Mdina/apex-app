@@ -40,17 +40,17 @@ const Landing = () => {
     <>
       <div className="header">
         <img src={Logo} className="logo-img"/>
-        <h1>Welcome to <span style={{ color: "brown" }}>Filfoletta.eu</span>!</h1>
+        <h1>Welcome to <span style={{ color: "brown" }}>Mdina.eu</span>!</h1>
         <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond" }}>Discover my journey through innovative projects and creative explorations, all crafted from the heart of Europe.</h2>
         <div className="title-btns">
           <button className="link-btn link-1" onClick={scrollToExplanation}>Learn more</button>
-          <button className="link-btn link-2" onClick={openDomainOverlay}>Why filfoletta?</button>
+          <button className="link-btn link-2" onClick={openDomainOverlay}>Why Mdina?</button>
           
         </div>
       </div>
 
       <Overlay
-        heading={<>Why I chose <span style={{ color: "brown" }}>Filfoletta.eu</span></>}
+        heading={<>Why I chose <span style={{ color: "brown" }}>Mdina.eu</span></>}
         type={domainOverlay}
         
         closeFunc={closeDomainOverlay}
@@ -58,7 +58,7 @@ const Landing = () => {
           <>
             <div>
               <div style={{ color: "#374a5aff" }}>
-                <p>I chose the domain name filfoletta.eu because it has a unique and memorable quality that stands out. Its distinctiveness makes it easy for people to recall, and the playful tone adds a fun element that reflects the personality and energy behind the brand. The name encapsulates both creativity and simplicity, making it the perfect fit.</p>
+                <p>I chose the domain name mdina.eu because it has a unique and memorable quality that stands out. Its distinctiveness makes it easy for people to recall, and the playful tone adds a fun element that reflects the personality and energy behind the brand. The name encapsulates both creativity and simplicity, making it the perfect fit.</p>
               </div>
             </div>
           </>
@@ -118,18 +118,18 @@ const Landing = () => {
         content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
       />
 
-      <Section 
+      {/* <Section 
         fontSize="2.5em"
         color="white"
-        titleTwo="And if you came for information about Filfoletta..."
+        titleTwo="And if you came for information about Mdina..."
         backgroundColor="maroon"
         footer={
           <>
             <br></br>
-            <button className="island-btn" onClick={() => navigate('/filfoletta')}>Then click here to learn about Filfoletta Islet!</button>
+            <button className="island-btn" onClick={() => navigate('/mdina')}>Then click here to learn about the city of Mdina</button>
           </>
         }
-      />
+      /> */}
 
       <Footer />
     </>

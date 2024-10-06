@@ -30,10 +30,8 @@ const RouterConfig = () => {
           <div className="content">
             {useRoutes([
               { path: '/projects', element: <Pages /> },
-              { path: '/filfoletta-islet', element: <Navigate to="/filfoletta-islet" />  },
-              { path: '/filfoletta-island', element: <Navigate to="/filfoletta-islet" /> },
-              { path: '/filfoletta', element: <Islet />},
-              { path: '/sources', element: <Sources />},
+              { path: '/mdina', element: <Islet />},
+              // { path: '/sources', element: <Sources />},
               { path: '*', element: <NotFound /> },
             ])}
           </div>
