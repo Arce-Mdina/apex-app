@@ -65,6 +65,19 @@ const Landing = () => {
         }
       />
 
+      <Section 
+        fontSize="2.5em"
+        color="white"
+        titleTwo="And if you came for information about Mdina..."
+        backgroundColor="maroon"
+        footer={
+          <>
+            <br></br>
+            <button className="island-btn" onClick={() => navigate('/mdina')}>Then click here to learn about the city of Mdina</button>
+          </>
+        }
+      />
+
       <div ref={explanationRef}>
 
         <Section 
@@ -118,18 +131,7 @@ const Landing = () => {
         content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
       />
 
-      {/* <Section 
-        fontSize="2.5em"
-        color="white"
-        titleTwo="And if you came for information about Mdina..."
-        backgroundColor="maroon"
-        footer={
-          <>
-            <br></br>
-            <button className="island-btn" onClick={() => navigate('/mdina')}>Then click here to learn about the city of Mdina</button>
-          </>
-        }
-      /> */}
+      
 
       <Footer />
     </>

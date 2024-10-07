@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 
-import rock from '../assets/fifla-filfoletta-rock.webp'
-
-import bigRock from '../assets/rock.webp'
+import loc from '../assets/mdina-place.webp'
 
 import BgCard from '../components/BgCard'
 import Overlay from '../components/Overlay'
@@ -46,30 +44,30 @@ const Islet = () => {
 
   return (
     <div>
-        <h1 className='project-heading'>Filfoletta Islet</h1>
+        <h1 className='project-heading'>The Silent City</h1>
         <div>
             <BgCard 
-                image={bigRock}
-                heading="What is Filfoletta?"
+                image="https://live.staticflickr.com/3163/3089465155_a01643860b_b.jpg"
+                heading="What is Mdina?"
                 func={openBackgroundOverlay}
             />
 
             <BgCard 
-                image={rock}
-                heading="Where is Filfoletta?"
+                image={loc}
+                heading="Where is Mdina?"
                 func={openLocationOverlay}
             />
 
-            <BgCard 
-                image="https://cdn2.picryl.com/photo/2016/03/24/a-british-royal-marines-fires-at-his-target-at-the-ce6b9b-1024.jpg"
-                heading="Usages of Filfoletta"
+            <BgCard
+                image='https://images.pexels.com/photos/7681934/pexels-photo-7681934.jpeg' 
+                heading="History of Mdina"
                 func={openUsageOverlay}
             />
 
             <BgCard 
-                image="https://live.staticflickr.com/2927/14051058577_fcf26d691a_b.jpg"
-                heading="How can I get to Filfoletta?"
-                func={() => open('https://www.ecomarinemalta.com.mt/tours/filfla-tour/', '_blank')}
+                image='https://live.staticflickr.com/7756/27063138613_1c6d0b28b9_b.jpg'
+                heading="How can I get to Mdina?"
+                func={() => open('https://kmmaltairlines.com/en', '_blank')}
             />
         </div>
 
@@ -79,15 +77,13 @@ const Islet = () => {
             closeFunc={closeLocationOverlay}
             heading={
                 <div style={{ color: "brown" }}>
-                    Filfoletta's Location
+                    Mdina's Location
                 </div>
             }
             content={
                 <div>
-                    Filfoletta is located at one of the most southern points in the
-                    Maltese Archipelago. It is right next to an bigger, but still quite small island, 
-                    called Filfla. It's exact coordinates in the world: 
-                    <a href="https://maps.app.goo.gl/3n3Fp3yAXftvxJLt5" target="_blank"> 35.78647615143773, 14.4069164787208</a>
+                     
+                    <a href="" target="_blank"> </a>
                 </div>
             }
         />
@@ -97,15 +93,12 @@ const Islet = () => {
             closeFunc={closeBackgroundOverlay}
             heading={
                 <div style={{ color: "brown" }}>
-                    About Filfoletta
+                    About Mdina
                 </div>
             }
             content={
                 <div>
-                    Filfoletta is one of Malta's smallest islands/islets. There is no sign of life on the
-                    islet except for a few plants as an exception. It is a nature reserve protected by the Maltese
-                    government so getting there and going on it is impossible. However, you can go on a boat around
-                    it to get photos and a good look.
+                    
                 </div>
             }
         />
@@ -115,14 +108,12 @@ const Islet = () => {
             closeFunc={closeUsageOverlay}
             heading={
                 <div style={{ color: "brown" }}>
-                    Filfoletta's Usage
+                    Mdina's History
                 </div>
             }
             content={
                 <div>
-                    When the British governed Malta, the islands were used as a Royal Navy and sometimes
-                    Royal Air Force military base. The small islands of Filfla and Filfoletta
-                    is often used for target practice. Many shells from the 1900s are still there!
+                    
                 </div>
             }
         />

@@ -7,10 +7,10 @@ const Sources = () => {
     const navigate = useNavigate();
 
     const links = {
-        link1: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/74114a08-2daa-4205-a515-b2eb710a17b3/dfbk1zv-3280afd9-db3f-42d5-96c8-cd6904585b3c.jpg/v1/fill/w_1095,h_730,q_70,strp/filfla_and_filfoletta_islands_by_quit007_dfbk1zv-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODU0IiwicGF0aCI6IlwvZlwvNzQxMTRhMDgtMmRhYS00MjA1LWE1MTUtYjJlYjcxMGExN2IzXC9kZmJrMXp2LTMyODBhZmQ5LWRiM2YtNDJkNS05NmM4LWNkNjkwNDU4NWIzYy5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5_8LdjTjkOMmwpZ2gwQixiP4uO-FBPJLsBVZqX8KujM",
-        link2: "https://www.maltadvice.com/wp-content/medias/353/fifla-filfoletta-rock.webp",
-        link3: "https://cdn2.picryl.com/photo/2016/03/24/a-british-royal-marines-fires-at-his-target-at-the-ce6b9b-1024.jpg",
-        link4: "https://live.staticflickr.com/2927/14051058577_fcf26d691a_b.jpg",
+        link1: "https://live.staticflickr.com/3163/3089465155_a01643860b_b.jpg",
+        link2: "https://www.google.ie/maps/place/Mdina,+Malta/@41.3407466,-2.7550474,4.21z/data=!4m6!3m5!1s0x130e519568ce9a2f:0x99705c199db5bc13!8m2!3d35.8863691!4d14.4031146!16zL20vMDVqMTBx?entry=ttu&g_ep=EgoyMDI0MTAwNS4wIKXMDSoASAFQAw%3D%3D",
+        link3: "https://images.pexels.com/photos/7681934/pexels-photo-7681934.jpeg",
+        link4: "https://live.staticflickr.com/7756/27063138613_1c6d0b28b9_b.jpg",
     }
 
   return (

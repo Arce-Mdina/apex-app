@@ -31,7 +31,7 @@ const RouterConfig = () => {
             {useRoutes([
               { path: '/projects', element: <Pages /> },
               { path: '/mdina', element: <Islet />},
-              // { path: '/sources', element: <Sources />},
+              { path: '/sources', element: <Sources />},
               { path: '*', element: <NotFound /> },
             ])}
           </div>
