@@ -13,7 +13,7 @@ const Footer = () => {
             style={styles.link}
           >
             GitHub Repository
-            (Last updated: 6th October 2024)
+            (Last updated: 8th October 2024)
           </a>
         </p>
       </div>

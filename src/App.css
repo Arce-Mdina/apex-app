@@ -65,7 +65,7 @@
 }
 
 .city-card:hover {
-  box-shadow: 5px 10px 15px rgb(25, 130, 42);/*r: 255, g: 215, b: 0*/
+  box-shadow: 5px 10px 15px rgb(45, 168, 225);/*r: 255, g: 215, b: 0*/
 }
 
 .city-card .image {
