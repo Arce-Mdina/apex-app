@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import loc from '../assets/mdina-place.webp'
+// import loc from '../assets/Filfla-place.webp'
 
 import BgCard from '../components/BgCard'
 import Overlay from '../components/Overlay'
@@ -48,25 +48,25 @@ const Islet = () => {
         <div>
             <BgCard 
                 image="https://live.staticflickr.com/3163/3089465155_a01643860b_b.jpg"
-                heading="What is Mdina?"
+                heading="What is Filfla?"
                 func={openBackgroundOverlay}
             />
 
             <BgCard 
                 image={loc}
-                heading="Where is Mdina?"
+                heading="Where is Filfla?"
                 func={openLocationOverlay}
             />
 
             <BgCard
                 image='https://images.pexels.com/photos/7681934/pexels-photo-7681934.jpeg' 
-                heading="History of Mdina"
+                heading="History of Filfla"
                 func={openUsageOverlay}
             />
 
             <BgCard 
                 image='https://live.staticflickr.com/7756/27063138613_1c6d0b28b9_b.jpg'
-                heading="How can I get to Mdina?"
+                heading="How can I get to Filfla?"
                 func={() => open('https://kmmaltairlines.com/en', '_blank')}
             />
         </div>
@@ -77,16 +77,16 @@ const Islet = () => {
             closeFunc={closeLocationOverlay}
             heading={
                 <div style={{ color: "brown" }}>
-                    Mdina's Location
+                    Filfla's Location
                 </div>
             }
             content={
                 <div>
-                    Mdina is located next to the city of Rabat, in Malta. It is quite inland, quite
-                    close to the center of the main island. The exact location on a map is here: &nbsp;
+                    Filfla is off the Southern Coast of Malta. You can view this tiny islet on the Dingli Cliffs,
+                    and on the coast in the city of Qrendi, Siġġiewi or any other coastal cities. Its exact cooridinate is here: &nbsp;
                     
-                    <a href="https://www.google.ie/maps/place/Mdina,+Malta/@35.887438,14.3993175,15.52z/data=!4m6!3m5!1s0x130e519568ce9a2f:0x99705c199db5bc13!8m2!3d35.8863691!4d14.4031146!16zL20vMDVqMTBx?entry=ttu&g_ep=EgoyMDI0MTAwMi4xIKXMDSoASAFQAw%3D%3D" target="_blank"> 
-                        35.88755948673046, 14.404176474670338
+                    <a href="https://www.google.ie/maps/place/35%C2%B047'14.6%22N+14%C2%B024'35.0%22E/@35.7873901,14.4071323,17z/data=!3m1!4b1!4m4!3m3!8m2!3d35.7873901!4d14.4097072?entry=ttu&g_ep=EgoyMDI0MTAxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank"> 
+                        35.787390114902145, 14.409707152162456
                     </a>
                 </div>
             }
@@ -97,21 +97,23 @@ const Islet = () => {
             closeFunc={closeBackgroundOverlay}
             heading={
                 <div style={{ color: "brown" }}>
-                    About Mdina
+                    About Filfla
                 </div>
             }
             content={
                 <div>
                     <p>
-                        Mdina used to be the capital of Malta. Its high elevation gave its inhabitants
-                        strategic defense and attacking positions in the event of war. In addition, its
-                        fortification give the city defense from invaders. 
+                        Filfla is tiny islet off the coast of Malta, it is owned by the Government of Malta
+                        and it is a natural reserve site. Filfla is currently inhabited, and will remain so, although
+                        it is possible to go on it for tours etc.
                     </p>
 
                     <p>
-                        In the present day, it is called the Silent City. This due to the fact when the capital
-                        mode out of Mdina into Valletta and left the city so inhabited people started to call it
-                        a ghost town, or the silent city.
+                        There is a Maltese legends on the creation of Filfla. The legend recounts that there was a community
+                        who lived in the area now called Il-Maqluba. The community lived such dissolute lives that a neighbour
+                        once warned of the community of their sinful ways, to no effect. God therefore wants to punish the sinners
+                        by englufing the hamlet, saving only the wise neighbour. Angels were to said to have thrown a piece of the hamlet
+                        into the sea, creating the isle of Filfla.
                     </p>
                 </div>
             }
@@ -122,33 +124,32 @@ const Islet = () => {
             closeFunc={closeUsageOverlay}
             heading={
                 <div style={{ color: "brown" }}>
-                    Mdina's History
+                    Filfla's History
                 </div>
             }
             content={
                 <div>
                     <p>
-                        Mdina, often referred to as "The Silent City," 
-                        is one of Malta's oldest and most historically rich cities. 
-                        Its origins date back over 4,000 years, with evidence suggesting 
-                        it was first established by the Phoenicians around 700 BCE. 
-                        The city gained prominence during the Roman period when it became 
-                        a key administrative center, and it is believed that St. Paul resided there 
-                        after his shipwreck in Malta. Over time, Mdina became fortified due to 
-                        its strategic location atop a hill, offering natural defense. 
-                        Under Arab rule in the 9th century, it was further fortified, 
-                        and its name was changed to "Mdina," derived from the Arabic word for "city."
+                        Filfla was considered to be sacred, which was probably why the Maltese built temples 
+                        on the Maltese main coast opposite the islet.
                     </p>
 
                     <p>
-                        During the medieval period, Mdina continued to thrive, especially under the 
-                        rule of the Knights of St. John, who further enhanced its fortifications. 
-                        Despite being replaced by Valletta as the administrative capital in the 16th century, 
-                        Mdina retained its status as the noble and religious heart of Malta. 
-                        Its narrow streets, baroque architecture, and serene atmosphere reflect 
-                        centuries of history. Today, Mdina is a key cultural and historical attraction, 
-                        with landmarks such as St. Paul's Cathedral and the city walls that still stand 
-                        as a testament to its storied past.
+                        Filfla had some structures on it. There was a chapel built inside the cave of Filfla,
+                        however, it was destroyed in an earthquake in 1856, but that also sank the cave. 
+                        An old Malta map showed a fort, a lighthouse and also a chapel dating back to 1798.
+                    </p>
+
+                    <p>
+                        Until 1971, the Royal Navy and the Royal Air Force used the islet for target practice,
+                        these bombardments and empty catridges could still be seen today! In 1980, it became a bird reserve.
+                    </p>
+
+                    <p>
+                        In 1988, there was Filfla Natural Reserve Act enacted by the Maltese government which provided
+                        restriction on access and use, including a ban on fishing within one nautical mile of the islet 
+                        due to the risk of unexploded ordance exploding (it was a target practice...), although later acts
+                        permitted people to fish there again.
                     </p>
                 </div>
             }

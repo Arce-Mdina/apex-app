@@ -1,6 +1,9 @@
 import React, { useRef, useState } from 'react'
 import Logo from '../../public/logo.webp'
 
+import HeroRight from '../components/HeroRight';
+import HeroLeft from '../components/HeroLeft';
+
 import { useNavigate } from 'react-router-dom'
 
 import Section from '../components/Section'
@@ -38,19 +41,34 @@ const Landing = () => {
 
   return (
     <>
+
+      
+
       <div className="header">
         <img src={Logo} className="logo-img"/>
-        <h1>Welcome to <span style={{ color: "brown" }}>Mdina.eu</span>!</h1>
-        <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond" }}>Discover my journey through innovative projects and creative explorations, all crafted from the heart of Europe.</h2>
+        <h1>Welcome to <span style={{ color: "brown" }}>Filfla.eu</span>!</h1>
+        <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond" }}>Start your journey with us today!</h2>
         <div className="title-btns">
           <button className="link-btn link-1" onClick={scrollToExplanation}>Learn more</button>
-          <button className="link-btn link-2" onClick={openDomainOverlay}>Why Mdina?</button>
+          <button className="link-btn link-2" onClick={openDomainOverlay}>Why Filfla?</button>
           
         </div>
       </div>
 
+      <HeroRight
+        icon="fa-solid fa-user"
+        fontSize={50}
+        title="Optimise your content with Search Analytics"
+        text="See which queries bring users to your site. Analyse your site's impressions, clicks and position on Google Search."
+      />
+      <HeroLeft
+        title="Get your content on Google"
+        fontSize={50}
+        text="Submit sitemaps and individual URLs for crawling. Review your index coverage to make sure your site is fresh."
+      />
+
       <Overlay
-        heading={<>Why I chose <span style={{ color: "brown" }}>Mdina.eu</span></>}
+        heading={<>Why I chose <span style={{ color: "brown" }}>Filfla.eu</span></>}
         type={domainOverlay}
         
         closeFunc={closeDomainOverlay}
@@ -58,7 +76,7 @@ const Landing = () => {
           <>
             <div>
               <div style={{ color: "#374a5aff" }}>
-                <p>I chose the domain name mdina.eu because it has a unique and memorable quality that stands out. Its distinctiveness makes it easy for people to recall, and the playful tone adds a fun element that reflects the personality and energy behind the brand. The name encapsulates both creativity and simplicity, making it the perfect fit.</p>
+                <p>I chose the domain name filfla.eu because it has a unique and memorable quality that stands out. Its distinctiveness makes it easy for people to recall, and the playful tone adds a fun element that reflects the personality and energy behind the brand. The name encapsulates both creativity and simplicity, making it the perfect fit.</p>
               </div>
             </div>
           </>
@@ -68,12 +86,12 @@ const Landing = () => {
       <Section 
         fontSize="2.5em"
         color="white"
-        titleTwo="And if you came for information about Mdina..."
+        titleTwo="And if you came for information about Filfla..."
         backgroundColor="maroon"
         footer={
           <>
             <br></br>
-            <button className="island-btn" onClick={() => navigate('/mdina')}>Then click here to learn about the city of Mdina</button>
+            <button className="island-btn" onClick={() => navigate('/filfla')}>Then click here to learn about Filfla Islet</button>
           </>
         }
       />
@@ -93,13 +111,13 @@ const Landing = () => {
               </span> */}
               <img src={net} style={{ width: "100px" }}/>
               <Padding padding="3px"/>
-              <div>
+              {/* <div>
                 All of my projects will be displayed here so you can take inspiration and build your own! 
                 Not all of them are about programming so anyone is welcome!
-              </div>
+              </div> */}
             </div>
           }
-          footer={(<><br></br><button className='project-btn' onClick={() => navigate('/projects')}>See all of my projects</button></>)}
+          footer={(<><br></br><button className='project-btn' onClick={() => navigate('/network')}>See all of my projects</button></>)}
         />
 
 
