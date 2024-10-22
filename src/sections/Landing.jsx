@@ -40,42 +40,6 @@ const Landing = () => {
     setDomainOverlay(false);
   }
 
-  const svgs = {
-    networkSVG: (
-      <>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="400"
-          height="400"
-          viewBox="0 0 400 400"
-        >
-
-          <line x1="200" y1="200" x2="100" y2="100" stroke="black" strokeWidth="2" />
-          <line x1="200" y1="200" x2="300" y2="100" stroke="black" strokeWidth="2" />
-          <line x1="200" y1="200" x2="100" y2="300" stroke="black" strokeWidth="2" />
-          <line x1="200" y1="200" x2="300" y2="300" stroke="black" strokeWidth="2" />
-          <line x1="200" y1="200" x2="200" y2="75" stroke="black" strokeWidth="2" />
-          <line x1="200" y1="200" x2="200" y2="325" stroke="black" strokeWidth="2" />
-          <line x1="200" y1="200" x2="75" y2="200" stroke="black" strokeWidth="2" />
-          <line x1="200" y1="200" x2="325" y2="200" stroke="black" strokeWidth="2" />
-          <circle cx="200" cy="200" r="50" fill="#ffcc00" />
-
-          <circle cx="100" cy="100" r="20" fill="#ff6666" />
-          <circle cx="300" cy="100" r="20" fill="#66ff66" />
-          <circle cx="100" cy="300" r="20" fill="#6666ff" />
-          <circle cx="300" cy="300" r="20" fill="#ff66ff" />
-          <circle cx="200" cy="75" r="20" fill="#66ffff" />
-          <circle cx="200" cy="325" r="20" fill="#ff9933" />
-          <circle cx="75" cy="200" r="20" fill="#99ccff" />
-          <circle cx="325" cy="200" r="20" fill="#ffcc99" />
-
-          
-        </svg>
-      </>
-    ),
-    SVG:(<></>),
-  }
-
   return (
     <>
 
