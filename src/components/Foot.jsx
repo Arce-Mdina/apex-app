@@ -2,22 +2,25 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer style={styles.footer}>
-      <div style={styles.column}>
-        <h3 style={styles.heading}>Source Code</h3>
-        <p>
-          <a
-            href="https://github.com/Arce-Mdina/apex-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            style={styles.link}
-          >
-            GitHub Repository
-            (Last updated: 12th October 2024)
-          </a>
-        </p>
-      </div>
-    </footer>
+    <>
+      <footer style={styles.footer}>
+        <div style={styles.column}>
+          <h3 style={styles.heading}>Helpful Links</h3>
+          <p>
+            <i 
+              className="fa-brands fa-github foot-link" 
+              href="https://github.com/Arce-Mdina/apex-app" 
+              style={{ fontSize: 30 }}
+            />
+          </p>
+        </div>
+        <div style={styles.column}>
+          <h3 style={styles.heading}>Copyright</h3>
+          © 2024 Filfla.eu All rights Reserved.
+        </div>
+      </footer>
+      
+    </>
   );
 }
 

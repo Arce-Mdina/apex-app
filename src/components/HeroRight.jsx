@@ -1,8 +1,9 @@
-const HeroRight = ({ icon, title, text, fontSize }) => {
+const HeroRight = ({ icon, title, text, fontSize, svg, color }) => {
   return (
     <div className="card card-grid-double">
       <div className="hero-icon">
-        <i style={{ fontSize }} className={icon}/> {/* Replace img with an Icon */}
+        <i style={{ fontSize, color }} className={icon}/> {/* Replace img with an Icon */}
+        {svg}
       </div>
         
       <div className="content">

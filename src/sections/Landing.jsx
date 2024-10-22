@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import Logo from '../../public/logo.webp'
+import Logo from '../assets/logo.webp'
 
 import HeroRight from '../components/HeroRight';
 import HeroLeft from '../components/HeroLeft';
@@ -18,6 +18,7 @@ import Padding from '../components/Padding'
 import Overlay from '../components/Overlay'
 
 const Landing = () => {
+
 
   const navigate = useNavigate();
 
@@ -39,6 +40,42 @@ const Landing = () => {
     setDomainOverlay(false);
   }
 
+  const svgs = {
+    networkSVG: (
+      <>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="400"
+          height="400"
+          viewBox="0 0 400 400"
+        >
+
+          <line x1="200" y1="200" x2="100" y2="100" stroke="black" strokeWidth="2" />
+          <line x1="200" y1="200" x2="300" y2="100" stroke="black" strokeWidth="2" />
+          <line x1="200" y1="200" x2="100" y2="300" stroke="black" strokeWidth="2" />
+          <line x1="200" y1="200" x2="300" y2="300" stroke="black" strokeWidth="2" />
+          <line x1="200" y1="200" x2="200" y2="75" stroke="black" strokeWidth="2" />
+          <line x1="200" y1="200" x2="200" y2="325" stroke="black" strokeWidth="2" />
+          <line x1="200" y1="200" x2="75" y2="200" stroke="black" strokeWidth="2" />
+          <line x1="200" y1="200" x2="325" y2="200" stroke="black" strokeWidth="2" />
+          <circle cx="200" cy="200" r="50" fill="#ffcc00" />
+
+          <circle cx="100" cy="100" r="20" fill="#ff6666" />
+          <circle cx="300" cy="100" r="20" fill="#66ff66" />
+          <circle cx="100" cy="300" r="20" fill="#6666ff" />
+          <circle cx="300" cy="300" r="20" fill="#ff66ff" />
+          <circle cx="200" cy="75" r="20" fill="#66ffff" />
+          <circle cx="200" cy="325" r="20" fill="#ff9933" />
+          <circle cx="75" cy="200" r="20" fill="#99ccff" />
+          <circle cx="325" cy="200" r="20" fill="#ffcc99" />
+
+          
+        </svg>
+      </>
+    ),
+    SVG:(<></>),
+  }
+
   return (
     <>
 
@@ -46,8 +83,10 @@ const Landing = () => {
 
       <div className="header">
         <img src={Logo} className="logo-img"/>
-        <h1>Welcome to <span style={{ color: "brown" }}>Filfla.eu</span>!</h1>
-        <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond" }}>Start your journey with us today!</h2>
+        <h1>Welcome to <span style={{ color: "brown",  }}>Filfla.eu</span>!</h1>
+        {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Explore our matrix of innnovative projects all crafted from the heart of Europe.</h2>         */}
+        <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Explore the place where our creative imaginations becomes reality.</h2>
+        {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Filfla.eu - where innovation meets collaboration.</h2> */}
         <div className="title-btns">
           <button className="link-btn link-1" onClick={scrollToExplanation}>Learn more</button>
           <button className="link-btn link-2" onClick={openDomainOverlay}>Why Filfla?</button>
@@ -55,16 +94,50 @@ const Landing = () => {
         </div>
       </div>
 
+
+      <div ref={explanationRef}></div>
+
+
       <HeroRight
-        icon="fa-solid fa-user"
-        fontSize={50}
-        title="Optimise your content with Search Analytics"
-        text="See which queries bring users to your site. Analyse your site's impressions, clicks and position on Google Search."
+        icon="fa-solid fa-globe"
+        color="dodgerblue"
+        fontSize={120}
+        title="Discover our network"
+        text={
+          <>
+            Our network covers different fields and ideas, giving you the chance to learn 
+            more about practical solutions and developments. Each project offers something new, 
+            helping you stay informed and engaged in a changing world.
+          </>
+        }
+        
       />
       <HeroLeft
-        title="Get your content on Google"
-        fontSize={50}
-        text="Submit sitemaps and individual URLs for crawling. Review your index coverage to make sure your site is fresh."
+        icon="fa-solid fa-book"
+        color="darkgreen"
+        title="Expand your knowledge"
+        fontSize={120}
+        text={
+          <>
+            Explore various initiatives 
+            spanning multiple fields, each designed to make an impact. 
+            Whether you're interested in tech, sustainability, or creative ventures, 
+            Filfla.eu connects you to cutting-edge solutions. 
+          </>
+        }
+      />
+      <HeroRight
+        icon="fa-solid fa-lightbulb"
+        color="gold"
+        fontSize={120}
+        title="Create your own ideas"
+        text={
+          <>
+            By exploring Filfla.eu, you’ll gain valuable insights from our network of projects, 
+            which can inspire your own creative ideas. With the information and resources available, 
+            you’ll be able to shape your own unique solutions.
+          </>
+        }
       />
 
       <Overlay
@@ -91,63 +164,14 @@ const Landing = () => {
         footer={
           <>
             <br></br>
-            <button className="island-btn" onClick={() => navigate('/filfla')}>Then click here to learn about Filfla Islet</button>
+            <button className="island-btn" onClick={() => navigate('/filfla')}>Then click here to learn about Filfla Islet!</button>
           </>
         }
       />
 
-      <div ref={explanationRef}>
+      
 
-        <Section 
-          fontSize="2.5em"
-          color="#374a5aff"
-          title="Discover"
-          titleTwo={<>our <span style={{ color: "#265573ff", fontWeight: "500" }}>network</span></>}
-          backgroundColor="#ECEFF1"
-          content={
-            <div>
-              {/* <span style={{ fontSize: "150px", lineHeight: "0.8", color: "dodgerblue", display: "inline-block", overflow: "hidden", }}>
-                &#9881;
-              </span> */}
-              <img src={net} style={{ width: "100px" }}/>
-              <Padding padding="3px"/>
-              {/* <div>
-                All of my projects will be displayed here so you can take inspiration and build your own! 
-                Not all of them are about programming so anyone is welcome!
-              </div> */}
-            </div>
-          }
-          footer={(<><br></br><button className='project-btn' onClick={() => navigate('/network')}>See all of my projects</button></>)}
-        />
-
-
-        {/* <h2>How a site is produced (by the developer)</h2>
-        <div style={{ padding: "17px" }}></div>
-        <div className="card-grid-double">
-          <Card heading="Step 1 - Idea" desc="It all starts with an inspiration, or idea that makes its way to the developer's mind. The first match that is lit in box of matches. This can range from anything, like a doodle, schoolwork, or out of boredom." classes="orange-red"/>
-          <Card heading="Step 2 - Design" desc="The idea formulates to a plan, where a very brief design and logic of a website starts to form. This step could also include searching for similar sites to use as a reference. " classes="reddish-brown"/>
-          <Card heading="Step 3 - Code" desc="Once a reference and design is completed, a website structure will be constructed. The most common language used in these projects are React.js. This step is the longest step of all of them and therefore requries more attention and resources." classes="blueish"/>
-          <Card heading="Step 4 - Deploy" desc="A website has been built, tested, will be deployed onto GitHub, where using Cloudflare or other DNS sites, it is paired with a domain name and published online for the public's eyes. This is the time where a project will most likely show up here and marked as done." classes="green"/>
-        </div> */}
-      </div>
-
-      <Section
-        fontSize="2.5em"
-        color="#374a5aff"
-        title="Learn"
-        titleTwo="new skills"
-        backgroundColor="#DEE3E6"
-        content={<>Learn as you explore how I do my projects, and make them better. You can access my open-source code anywhere* and use them as reference. <br /> <br /><div style={{ fontSize: '0.7em' }}>*as long as the network you are on is not blocking the platform.</div></>}
-      />
-
-      <Section 
-        fontSize="2.5em"
-        color="#374a5aff"
-        title="Explore"
-        titleTwo="your ideas"
-        backgroundColor="#CCD4D9"
-        content="By using my sites or other sites as a reference, your ideas will expand and you can create something wonderful! "
-      />
+      
 
       
 

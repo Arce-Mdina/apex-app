@@ -44,28 +44,28 @@ const Islet = () => {
 
   return (
     <div>
-        <h1 className='project-heading'>The Silent City</h1>
+        <h1 className='project-heading'>Filfla Islet</h1>
         <div>
             <BgCard 
-                image="https://live.staticflickr.com/3163/3089465155_a01643860b_b.jpg"
+                image="https://upload.wikimedia.org/wikipedia/commons/6/65/Filfla_Island.jpg"
                 heading="What is Filfla?"
                 func={openBackgroundOverlay}
             />
 
             <BgCard 
-                image={loc}
+                image=""
                 heading="Where is Filfla?"
                 func={openLocationOverlay}
             />
 
             <BgCard
-                image='https://images.pexels.com/photos/7681934/pexels-photo-7681934.jpeg' 
+                image='' 
                 heading="History of Filfla"
                 func={openUsageOverlay}
             />
 
             <BgCard 
-                image='https://live.staticflickr.com/7756/27063138613_1c6d0b28b9_b.jpg'
+                image=''
                 heading="How can I get to Filfla?"
                 func={() => open('https://kmmaltairlines.com/en', '_blank')}
             />
