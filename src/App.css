@@ -11,6 +11,17 @@
   text-align: center;
 }
 
+.home-btn {
+  transition: 0.3s ease-in-out;
+  color: orange; 
+  padding: 10px;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  color: rgb(215, 140, 0);
+}
+
 .foot-link {
   cursor: pointer;
 }
@@ -386,9 +397,9 @@
     width:85vw;
   }
 
-  .back-button {
+  /* .back-button {
     position: absolute;
-  }
+  } */
 
 
 }

@@ -94,6 +94,10 @@ const Landing = () => {
             spanning multiple fields, each designed to make an impact. 
             Whether you're interested in tech, sustainability, or creative ventures, 
             Filfla.eu connects you to cutting-edge solutions. 
+
+            <br></br>
+            <br></br>
+            <button className="project-btn" onClick={() => navigate('/research')}>Our research</button>
           </>
         }
       />
