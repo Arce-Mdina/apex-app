@@ -8,9 +8,6 @@ import { useNavigate } from 'react-router-dom'
 
 import Section from '../components/Section'
 
-import net from '../assets/network.webp'
-// <img src={reactLogo} style={{ width: "100px" }}/>
-
 import Footer from '../components/Foot'
 
 import Padding from '../components/Padding'
