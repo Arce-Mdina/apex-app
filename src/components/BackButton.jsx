@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
-const HomeButton = () => {
+const BackButton = () => {
 
     let navigate = useNavigate();
 
@@ -20,4 +20,4 @@ const HomeButton = () => {
     );
 };
 
-export default HomeButton;
+export default BackButton;

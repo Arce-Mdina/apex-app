@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css'
 
-import { BrowserRouter, useRoutes, Navigate } from 'react-router-dom'
+import { BrowserRouter, useRoutes } from 'react-router-dom'
+
+// Analytics
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 // Components
 import ScrollToTop from './components/ScrollToTop'
 import NotFound from './sections/NotFound';
-import HomeButton from './components/HomeButton';
-
-import { Analytics } from "@vercel/analytics/react"
+import BackButton from './components/BackButton';
 
 // Sections
 import Landing from './sections/Landing';
@@ -27,7 +29,7 @@ const RouterConfig = () => {
       path: '*',
       element: (
         <>
-          <HomeButton />
+          <BackButton />
           <div className="content">
             {useRoutes([
               { path: '/projects', element: <Pages /> },
@@ -51,6 +53,7 @@ const App = () => {
       <BrowserRouter basename="/">
         <ScrollToTop />
         <Analytics />
+        <SpeedInsights/>
         <RouterConfig />
       </BrowserRouter>
     </>
