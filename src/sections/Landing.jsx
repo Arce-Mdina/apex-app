@@ -17,6 +17,9 @@ import Padding from '../components/Padding'
 
 import Overlay from '../components/Overlay'
 
+// Icons
+import { faGlobe, faBook, faLightbulb } from '@fortawesome/free-solid-svg-icons';
+
 const Landing = () => {
 
 
@@ -63,7 +66,7 @@ const Landing = () => {
 
 
       <HeroRight
-        icon="fa-solid fa-globe"
+        icon={faGlobe}
         color="dodgerblue"
         fontSize={120}
         title="Discover our network"
@@ -72,12 +75,16 @@ const Landing = () => {
             Our network covers different fields and ideas, giving you the chance to learn 
             more about practical solutions and developments. Each project offers something new, 
             helping you stay informed and engaged in a changing world.
+
+            <br></br>
+            <br></br>
+            <button className="project-btn" onClick={() => navigate('/projects')}>Our projects</button>
           </>
         }
         
       />
       <HeroLeft
-        icon="fa-solid fa-book"
+        icon={faBook}
         color="darkgreen"
         title="Expand your knowledge"
         fontSize={120}
@@ -91,7 +98,7 @@ const Landing = () => {
         }
       />
       <HeroRight
-        icon="fa-solid fa-lightbulb"
+        icon={faLightbulb}
         color="gold"
         fontSize={120}
         title="Create your own ideas"

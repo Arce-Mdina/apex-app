@@ -8,9 +8,9 @@ const Sources = () => {
 
     const links = {
         link1: "https://upload.wikimedia.org/wikipedia/commons/6/65/Filfla_Island.jpg",
-        link2: "",
-        link3: "",
-        link4: "",
+        link2: "https://upload.wikimedia.org/wikipedia/commons/8/81/Filfla_island.jpg",
+        link3: "https://upload.wikimedia.org/wikipedia/commons/2/22/Filfla_the_islet_of_Malta.jpg",
+        link4: "https://live.staticflickr.com/4029/34829777774_91181405a6_b.jpg",
     }
 
   return (

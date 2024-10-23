@@ -1,4 +1,6 @@
 import React from 'react';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 
 const Footer = () => {
   return (
@@ -6,13 +8,13 @@ const Footer = () => {
       <footer style={styles.footer}>
         <div style={styles.column}>
           <h3 style={styles.heading}>Helpful Links</h3>
-          <p>
-            <i 
-              className="fa-brands fa-github foot-link" 
-              href="https://github.com/Arce-Mdina/apex-app" 
+          <a href="https://github.com/Arce-Mdina/apex-app">
+            <Icon 
+              className="foot-link" 
               style={{ fontSize: 30 }}
+              icon={faGithub}
             />
-          </p>
+          </a>
         </div>
         <div style={styles.column}>
           <h3 style={styles.heading}>Copyright</h3>

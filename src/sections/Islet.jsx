@@ -53,19 +53,19 @@ const Islet = () => {
             />
 
             <BgCard 
-                image=""
+                image="https://upload.wikimedia.org/wikipedia/commons/8/81/Filfla_island.jpg"
                 heading="Where is Filfla?"
                 func={openLocationOverlay}
             />
 
             <BgCard
-                image='' 
+                image='https://upload.wikimedia.org/wikipedia/commons/2/22/Filfla_the_islet_of_Malta.jpg' 
                 heading="History of Filfla"
                 func={openUsageOverlay}
             />
 
             <BgCard 
-                image=''
+                image='https://live.staticflickr.com/4029/34829777774_91181405a6_b.jpg'
                 heading="How can I get to Filfla?"
                 func={() => open('https://kmmaltairlines.com/en', '_blank')}
             />

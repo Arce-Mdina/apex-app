@@ -29,7 +29,7 @@ const RouterConfig = () => {
           <HomeButton />
           <div className="content">
             {useRoutes([
-              { path: '/network', element: <Pages /> },
+              { path: '/projects', element: <Pages /> },
               { path: '/filfla', element: <Islet />},
               { path: '/sources', element: <Sources />},
               { path: '*', element: <NotFound /> },

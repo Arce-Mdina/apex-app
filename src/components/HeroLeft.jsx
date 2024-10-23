@@ -1,3 +1,5 @@
+import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+
 const HeroLeft = ({ icon, title, text, fontSize, svg, color }) => {
     return (
       <div className="card card-grid-double">
@@ -7,7 +9,7 @@ const HeroLeft = ({ icon, title, text, fontSize, svg, color }) => {
         </div>
 
         <div className="hero-icon">
-          <i style={{ fontSize, color }} className={icon}/> {/* Replace img with an Icon */}
+          <Icon icon={icon} style={{ fontSize, color }}/>
           {svg}
         </div>
       </div>

@@ -223,21 +223,23 @@
 }
 
 .island-btn {
-  color:black;
+
   transition:0.3s ease-in;
 }
 
 .island-btn:hover {
+  color:black;
   background-color: rgb(209, 255, 219);
 }
 
 .project-btn {
-  color:black;
+
   transition:0.3s ease-in;
 }
 
 .project-btn:hover {
-  background-color: rgb(209, 243, 255);
+  color:black;
+  background-color: rgb(226, 226, 226);
 }
 
 .back-button {
