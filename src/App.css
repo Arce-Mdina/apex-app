@@ -243,12 +243,12 @@
   background-color: rgb(209, 255, 219);
 }
 
-.project-btn {
+.standard-btn {
 
   transition:0.3s ease-in;
 }
 
-.project-btn:hover {
+.standard-btn:hover {
   color:black;
   background-color: rgb(226, 226, 226);
 }
