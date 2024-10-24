@@ -108,6 +108,10 @@ const Landing = () => {
             By exploring Filfla.eu, you’ll gain valuable insights from our network of projects, 
             which can inspire your own creative ideas. With the information and resources available, 
             you’ll be able to shape your own unique solutions.
+
+            <br></br>
+            <br></br>
+            <button className="standard-btn" onClick={() => navigate('/process')}>Our idea process</button>
           </>
         }
       />

@@ -12,8 +12,8 @@ const Research = () => {
             heading="Malta Guide Research"
             desc={
                 <>
-                    This project focused on creating a guide for people visiting Malta as well as
-                    learning about Malta's cultural heritage, history, current affairs etc.
+                  This project focused on creating a guide for people visiting Malta as well as
+                  learning about Malta's cultural heritage, history, current affairs etc.
                 </>
             }
           />
@@ -23,9 +23,9 @@ const Research = () => {
             heading="Lehman Brothers Research"
             desc={
                 <>
-                    This project focuses on giving people a more concentration information center
-                    for a company called Lehman Brothers. It seeks to educate people and let them 
-                    learn and possibly introduce them into the financial world.
+                  This project focuses on giving people a more concentration information center
+                  for a company called Lehman Brothers. It seeks to educate people and let them 
+                  learn and possibly introduce them into the financial world.
                 </>
             }
           />

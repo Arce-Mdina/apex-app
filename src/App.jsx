@@ -18,6 +18,7 @@ import Pages from './sections/Pages';
 import Islet from './sections/Islet';
 import Sources from './sections/Sources';
 import Research from './sections/Research';
+import Process from './sections/Process';
 
 const RouterConfig = () => {
   const routes = [
@@ -36,6 +37,7 @@ const RouterConfig = () => {
               { path: '/filfla', element: <Islet />},
               { path: '/sources', element: <Sources />},
               { path: '/research', element: <Research />},
+              { path: '/process', element: <Process />},
               { path: '*', element: <NotFound /> },
             ])}
           </div>
