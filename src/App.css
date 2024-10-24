@@ -11,6 +11,22 @@
   text-align: center;
 }
 
+.flex {
+  flex-direction: row-reverse;
+}
+
+/* .warp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+
+}
+
+.content {
+  max-width:700px;
+} */
+
 .home-btn {
   transition: 0.3s ease-in-out;
   color: orange; 
@@ -415,6 +431,9 @@
   }
 
   .card-grid-double {
+    display:flex;
+    flex-direction: column;
+    gap:40px;
     grid-template-columns: repeat(1, 1fr);
   }
 
@@ -432,6 +451,12 @@
 
   .city-card {
     width: 75vw;
+  }
+
+  .flex {
+    flex-direction: column-reverse;
+    /* align-items: column-reverse; */
+    /* align-items: flex-end; */
   }
 }
 
