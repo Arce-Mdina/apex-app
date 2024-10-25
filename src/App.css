@@ -431,8 +431,6 @@
   }
 
   .card-grid-double {
-    display:flex;
-    flex-direction: column;
     gap:40px;
     grid-template-columns: repeat(1, 1fr);
   }

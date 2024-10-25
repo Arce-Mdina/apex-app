@@ -5,12 +5,13 @@ import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 import { faCircleChevronLeft } from '@fortawesome/free-solid-svg-icons';
 
 const BackButton = () => {
+    
 
     let navigate = useNavigate();
 
     return (
         <>
-            <div className="back-button">
+            <div className={`back-button`}>
                 {/* <button>
                     <span style={{ color: "dodgerblue" }}>&#x2190;</span>&nbsp;<span style={{ color: "black" }}>Home</span>
                 </button> */}
