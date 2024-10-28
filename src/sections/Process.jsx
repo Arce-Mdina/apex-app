@@ -82,7 +82,16 @@ const Process = () => {
                     content={
                         <>
                             <div>
-                                <p>dafads</p>
+                                <p>
+                                    After we designed our website, we start coding! This is also one of the
+                                    longest steps and possibly the most fun for a project, as we meet programming challenges, 
+                                    bugs and all sorts of problems. This is also one of the hardest steps as we may try to include
+                                    more complex aspects into our project each time.
+                                </p>
+                                <p>
+                                    For our websites, we generally use React.js, a JavaScript library to make the site,
+                                    and then we deploy it onto the internet using GitHub and Vercel.
+                                </p>
                             </div>
                         </>
                     }
@@ -98,7 +107,17 @@ const Process = () => {
                     content={
                         <>
                             <div>
-                                <p></p>
+                                <p>
+                                    This is where the website has been finished, and the website
+                                    is being on run on local server one last time to search for unintended
+                                    bugs. We play around with the screen size, browser settings such as light
+                                    and dark mode to see if it affects our code etc.
+                                </p>
+                                <p>
+                                    For deployment, we upload it onto GitHub, and usually imports it to another
+                                    hosting platform such as Vercel or Netlify. We also assign it a custom domain,
+                                    usually it is projectName.filfla.eu.
+                                </p>
                             </div>
                         </>
                     }
@@ -108,7 +127,15 @@ const Process = () => {
                     content={
                         <>
                             <div>
-                                <p></p>
+                                <p>
+                                    Once everything is up and running on the Internet, we constantly monitor its
+                                    performance, analytics, and even for errors in our information and code. This is
+                                    to ensure that we are keeping an up-to-date site with accurate information
+                                    that could be accessed worldwide.
+                                </p>
+                                <p>
+                                    If we do spot an error, we will fix it and going through the Phase 2 and 3 again.
+                                </p>
                             </div>
                         </>
                     }

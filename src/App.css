@@ -13,12 +13,10 @@
 
 .process {
   /* margin:20px; */
-  width:70vw;
+
   display: flex;
   margin:20px;
   gap: 20px;
-
-
 }
 
 .accordion {
@@ -53,9 +51,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   /* width: 100%; */
-  padding: 20px;
 }
 
 .phases {
@@ -78,7 +74,7 @@
   padding-bottom:15px; */
   /* padding:20px; */
   border-radius: 20px;
-  font-size:2em;
+  font-size:2.5em;
   justify-content: center;
   align-items: center;
   background-color: #bddce7ff;
@@ -482,7 +478,7 @@
 
 @media (max-width: 800px) {
   .logo-img {
-    width:20vw ;
+    width:25vw ;
   }
 
   .link-1, .link-2 {
@@ -507,7 +503,7 @@
 
 @media (max-width: 600px) {
   .logo-img  {
-    width:25vw;
+    width:35vw;
   }
 
   .card-grid-double {
@@ -536,9 +532,14 @@
   }
 
   .flex {
+    display:flex;
     flex-direction: column-reverse;
     /* align-items: column-reverse; */
     /* align-items: flex-end; */
+  }
+
+  .hero-icon {
+    margin-bottom: 20px;
   }
 }
 
