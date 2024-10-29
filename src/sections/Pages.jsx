@@ -29,7 +29,7 @@ const Pages = () => {
           <Card 
             link="https://research.filfla.eu"
             heading="Research App"
-            desc="Find out how I created my sites and what information I got in doing so! All sites' info in one! Have fun learning and exploring my content!"
+            desc="Find out how I created my sites and what information I got in doing so! All sites' info in one! Have fun learning and exploring my content! (Under construction! Coming out soon!)"
             // image={lehmanBrothers}
           />
         </div>
