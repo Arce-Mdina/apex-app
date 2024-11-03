@@ -49,7 +49,8 @@ const Landing = () => {
         <img src={Logo} className="logo-img"/>
         <h1>Welcome to <span style={{ color: "brown",  }}>Filfla.eu</span>!</h1>
         {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Explore our matrix of innnovative projects all crafted from the heart of Europe.</h2>         */}
-        <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Explore the place where our creative imaginations becomes reality.</h2>
+        {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Explore the place where our creative imaginations becomes reality.</h2> */}
+        <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Utilising AI to convert creative imaginations into reality.</h2>
         {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Filfla.eu - where innovation meets collaboration.</h2> */}
         <div className="title-btns">
           <button className="link-btn link-1" onClick={scrollToExplanation}>Learn more</button>
