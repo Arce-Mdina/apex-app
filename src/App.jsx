@@ -14,11 +14,13 @@ import BackButton from './components/BackButton';
 
 // Sections
 import Landing from './sections/Landing';
-import Pages from './sections/Pages';
+import Projects from './sections/Projects';
 import Islet from './sections/Islet';
 import Sources from './sections/Sources';
 import Research from './sections/Research';
 import Process from './sections/Process';
+import Pages from './sections/Pages';
+import Pro from './sections/Pro';
 
 const RouterConfig = () => {
   const routes = [
@@ -33,7 +35,9 @@ const RouterConfig = () => {
           <BackButton />
           <div className="content">
             {useRoutes([
-              { path: '/projects', element: <Pages /> },
+              { path: '/projects', element: <Projects /> },
+              { path: '/basic', element: <Pages /> },
+              { path: '/pro', element: <Pro /> },
               { path: '/filfla', element: <Islet />},
               { path: '/sources', element: <Sources />},
               { path: '/research', element: <Research />},

@@ -9,7 +9,7 @@ const Pages = () => {
   return (
     <div>
       {/* <Card /> */}
-      <h1 className="project-heading"><span style={{ color: "brown" }}>Filfla.eu</span>'s Projects</h1>
+      <h1 className="project-heading"><span style={{ color: "brown" }}>Filfla.eu</span>'s Basic Projects</h1>
       <div className="projects-page">
         <div className="card-grid-double">
           <Card 
