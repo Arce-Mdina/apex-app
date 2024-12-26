@@ -1,53 +1,33 @@
-import React from 'react';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
+import React from "react";
 
 const Footer = () => {
   return (
-    <>
-      <footer style={styles.footer}>
-        <div style={styles.column}>
-          <h3 style={styles.heading}>Helpful Links</h3>
-          <a href="https://github.com/Arce-Mdina/apex-app">
-            <Icon 
-              className="foot-link" 
-              style={{ fontSize: 30 }}
-              icon={faGithub}
-            />
-          </a>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-column">
+          
+          <ul><h3>Filfla.eu's Network</h3>
+            <div style={{ fontWeight: "bold" }}>Basic</div>
+            <li>
+              <a href="https://malta-guide.filfla.eu">Malta Guide</a>
+            </li>
+            <li>
+              <a href="https://lehman-brothers.filfla.eu">Lehman Brothers Case Study</a>
+            </li>
+            <br></br>
+            <div style={{ fontWeight: "bold" }}>Pro</div>
+            <li>
+              <a href="https://crypto.filfla.eu">Cryptotracker</a>
+            </li>
+          </ul>
         </div>
-        <div style={styles.column}>
-          <h3 style={styles.heading}>Copyright</h3>
-          © 2024 Filfla.eu All rights Reserved.
+        <div className="footer-column">
+          <h3>Copyright</h3>
+          <p>© 2024 Filfla.eu. All rights reserved.</p>
         </div>
-      </footer>
-      
-    </>
+      </div>
+    </footer>
   );
-}
-
-const styles = {
-  footer: {
-    display: 'flex',
-    justifyContent: 'space-around',
-    // backgroundColor: '#f8f9fa',
-    padding: '20px 0',
-    // borderTop: '1px solid #eaeaea',
-    marginTop: '20px',
-  },
-  column: {
-    flex: 1,
-    textAlign: 'center',
-  },
-  heading: {
-    marginBottom: '10px',
-    fontSize: '18px',
-  },
-  link: {
-    color: '#007bff',
-    textDecoration: 'none',
-    fontWeight: "bold",
-  },
 };
 
 export default Footer;
