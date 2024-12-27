@@ -40,7 +40,7 @@ const RouterConfig = () => {
               { path: '/pro', element: <Pro /> },
               { path: '/filfla', element: <Islet />},
               { path: '/sources', element: <Sources />},
-              { path: '/Proposals', element: <Proposals />},
+              { path: '/proposals', element: <Proposals />},
               { path: '/process', element: <Process />},
               { path: '*', element: <NotFound /> },
             ])}
