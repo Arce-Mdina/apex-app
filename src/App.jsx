@@ -17,7 +17,7 @@ import Landing from './sections/Landing';
 import Projects from './sections/Projects';
 import Islet from './sections/Islet';
 import Sources from './sections/Sources';
-import Research from './sections/Research';
+import Proposals from './sections/Proposals';
 import Process from './sections/Process';
 import Pages from './sections/Pages';
 import Pro from './sections/Pro';
@@ -40,7 +40,7 @@ const RouterConfig = () => {
               { path: '/pro', element: <Pro /> },
               { path: '/filfla', element: <Islet />},
               { path: '/sources', element: <Sources />},
-              { path: '/research', element: <Research />},
+              { path: '/Proposals', element: <Proposals />},
               { path: '/process', element: <Process />},
               { path: '*', element: <NotFound /> },
             ])}
