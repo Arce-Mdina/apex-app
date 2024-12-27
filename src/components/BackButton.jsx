@@ -28,9 +28,12 @@ const BackButton = () => {
         // Check if there is a loop pattern (last two paths are the same)
         const lastPath = historyStack.current[historyStack.current.length - 1];
         const secondLastPath = historyStack.current[historyStack.current.length - 2];
+        const currentPath = historyStack.current[historyStack.current.length]
 
         if (lastPath === secondLastPath) {
             // If a looping pattern is detected, go to the homepage
+            navigate('/');
+        } else if (currentPath === secondLastPath) {
             navigate('/');
         } else {
             // Otherwise, navigate back to the previous page
@@ -51,29 +54,3 @@ const BackButton = () => {
 };
 
 export default BackButton;
-
-
-// import React from 'react';
-// import { useNavigate } from 'react-router-dom';
-
-// import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
-// import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
-
-// const BackButton = () => {
-    
-
-//     let navigate = useNavigate();
-
-//     return (
-//         <>
-//             <div className={`back-button`}>
-//                 {/* <button>
-//                     <span style={{ color: "dodgerblue" }}>&#x2190;</span>&nbsp;<span style={{ color: "black" }}>Home</span>
-//                 </button> */}
-//                 <Icon icon={faArrowLeft} className="home-btn" onClick={() => navigate(-1)} style={{ fontSize: 40 }}/>
-//             </div>
-//         </>
-//     );
-// };
-
-// export default BackButton;
