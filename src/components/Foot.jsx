@@ -1,6 +1,9 @@
 import React from "react";
 
 const Footer = () => {
+
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <div className="footer-container">
@@ -23,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="footer-column">
           <h3>Copyright</h3>
-          <p>© 2024 Filfla.eu. All rights reserved.</p>
+          <p>© 2024 - {currentYear} Filfla.eu. All rights reserved.</p>
         </div>
       </div>
     </footer>
