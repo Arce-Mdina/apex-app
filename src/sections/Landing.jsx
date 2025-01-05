@@ -95,7 +95,7 @@ const Landing = () => {
 
             <br></br>
             <br></br>
-            <button className="standard-btn" onClick={() => navigate('/proposals')}>Our proposals</button>
+            <button className="standard-btn" onClick={() => navigate('/research')}>Our Research</button>
           </>
         }
       />
@@ -145,12 +145,6 @@ const Landing = () => {
           </>
         }
       />
-
-      
-
-      
-
-      
 
       <Footer />
     </>
