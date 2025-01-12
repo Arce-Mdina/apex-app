@@ -22,6 +22,9 @@ const Footer = () => {
             <li>
               <a href="https://crypto.filfla.eu">Cryptotracker</a>
             </li>
+            <li>
+              <a href="https://bible-verse.filfla.eu">Bible Verse</a>
+            </li>
           </ul>
         </div>
         <div className="footer-column">
