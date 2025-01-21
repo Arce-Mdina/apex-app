@@ -1,0 +1,37 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://filfla.eu/</loc>
+        <lastmod>2025-01-12</lastmod>
+    </url>
+    <url>
+        <loc>https://filfla.eu/?/projects</loc>
+        <lastmod>2024-12-26</lastmod>
+    </url>
+
+    <url>
+        <loc>https://filfla.eu/?/basic</loc>
+        <lastmod>2024-12-26</lastmod>
+    </url>
+
+    <url>
+        <loc>https://filfla.eu/?/pro</loc>
+        <lastmod>2024-01-12</lastmod>
+    </url>
+
+    <url>
+        <loc>https://filfla.eu/?/research</loc>
+        <lastmod>2025-01-05</lastmod>
+    </url>
+    <url>
+        <loc>https://filfla.eu/?/process</loc>
+        <lastmod>2024-10-28</lastmod>
+    </url>
+    <url>
+        <loc>https://filfla.eu/?/filfla</loc>
+        <lastmod>2024-10-23</lastmod>
+    </url>
+    <url>
+        <loc>https://filfla.eu/?/sources</loc>
+        <lastmod>2024-10-23</lastmod>
+    </url>
+</urlset>
