@@ -681,6 +681,10 @@
     width: 70vw;
   }
 
+  .heading {
+    width:70vw;
+  }
+
 
 }
 
@@ -704,6 +708,10 @@
 
   .back-button {
     position: absolute;
+  }
+
+  .heading {
+    width:85vw;
   }
 
 }
@@ -755,6 +763,10 @@
   .hero-icon {
     margin-bottom: 20px;
   }
+
+  .heading {
+    font-size:3rem;
+  }
 }
 
 @media (max-width:500px) {
@@ -764,6 +776,15 @@
 
   .title-btns {
     width: 300px;
+  }
+
+  .header {
+    padding-top:13vh;
+    padding-bottom:10vh;
+  }
+
+  .heading {
+    width:95vw;
   }
 }
 
