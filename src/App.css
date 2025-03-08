@@ -11,6 +11,126 @@
   text-align: center;
 }
 
+/* __________________________________________________________________ */
+
+.App {
+  background-color: #FFFCEF;
+  /* background-color: #FFF9F2; */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.inline-btn-text {
+  display: inline-flex;              /* inline-flex */
+  height: 100%;                      /* h-full */
+  width: 100%;                       /* w-full */
+  cursor: pointer;                   /* cursor-pointer */
+  align-items: center;               /* items-center */
+  justify-content: center;           /* justify-center */
+  border-radius: 0.7rem;
+  background-color: #FFFCEF;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;            /* px-7 (horizontal padding) */
+  font-size: 0.875rem;               /* text-sm */
+  font-weight: 500;                  /* font-medium */
+  /* color: #ffffff; */
+  color:black;
+  backdrop-filter: blur(64px);       /* backdrop-blur-3xl (approx.) */
+  gap: 1rem; 
+}
+
+.head-btn {
+  position: relative;           /* relative */
+  display: inline-flex;         /* inline-flex */
+  height: 3rem;                 /* h-12 (3rem) */
+  width: 240px;
+  border:none;
+  overflow: hidden;             /* overflow-hidden */
+  border-radius: 0.8rem;        /* rounded-lg (typically 0.5rem) */
+  padding: 2px; 
+}
+
+.head-btn:focus {
+  outline: none;
+}
+
+/* Combined class */
+.head-btn-border {
+  position: absolute;
+  top: -1000%;
+  right: -1000%;
+  bottom: -1000%;
+  left: -1000%;
+  animation: spin 2s linear infinite;
+  /* background: conic-gradient(from 90deg at 50% 50%, #E2CBFF 0%, #393BB2 50%, #E2CBFF 100%); */
+  background: conic-gradient( from 90deg at 50% 50%, #E2CBFF 0%,  #BA55D3 50%, #4682B4 100%);
+}
+
+.word {
+  color:#444444;
+}
+
+.word1 {
+  color:gold;
+}
+
+.heading-wrap {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  text-align: center;
+  padding:15px;
+}
+
+.heading {
+  /* display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:0 auto; */
+  margin-top:10px;
+  text-align: center;
+  line-height: 1.5;
+  width:50vw;
+}
+
+.heading div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* __________________________________________________________________ */
+
+.label-heading {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .75rem;
+  line-height: 1rem;
+  color: #0056ff;
+}
+
+.normal-btn {
+  background-color: black;
+  color:white;
+  border-radius:20px;
+  border:1px solid black;
+  transition:0.3s ease-in-out;
+}
+
+.normal-btn:hover {
+  background-color:white;
+  color:black;
+}
 
 .footer {
   /* background-color: #333; */
@@ -406,34 +526,35 @@
 }
 
 .header {
-  height: 65vh;
-  padding-top: 17vh;
+  height: 55vh;
+  padding-top: 23vh;
   width:100vw;
+  text-align: center;
 }
 
 .island-btn {
   color:black;
-
-  background-color:rgb(255, 255, 255);
-
-  border-radius:13px;
-
+  background-color:white;
+  border-radius:20px;
   transition:0.3s ease-in;
 }
 
 .island-btn:hover {
-
-  background-color: rgb(209, 255, 219);
+  color:white;
+  background-color: rgb(177, 39, 39);
 }
 
 .standard-btn {
-
+  border-radius:20px;
+  background-color:white;
+  color:black;
+  border:1px solid black;
   transition:0.3s ease-in;
 }
 
 .standard-btn:hover {
-  color:black;
-  background-color: rgb(226, 226, 226);
+  color:white;
+  background-color: black;
 }
 
 .back-button {
@@ -560,6 +681,7 @@
     width: 70vw;
   }
 
+
 }
 
 @media (max-width: 800px) {
@@ -657,7 +779,6 @@
   .city-card {
     width: 80vw;
   }
-
   
 }
 

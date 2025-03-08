@@ -1,8 +1,8 @@
 import { FontAwesomeIcon as Icon } from '@fortawesome/react-fontawesome';
 
-const HeroRight = ({ icon, title, text, fontSize, svg, color }) => {
+const Hero = ({ icon, title, text, fontSize, svg, color }) => {
   return (
-    <div className="card card-grid-double">
+    <div className="card">
       <div className="hero-icon">
         {/* <i style={{ fontSize, color }} className={icon}/> */}
         <Icon icon={icon} style={{ fontSize, color }} />
@@ -17,4 +17,4 @@ const HeroRight = ({ icon, title, text, fontSize, svg, color }) => {
   );
 };
 
-export default HeroRight;
+export default Hero;

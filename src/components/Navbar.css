@@ -1,0 +1,90 @@
+.nav {
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  display:flex;
+}
+
+.navv {
+  position: fixed;
+  /* top: 0; */
+  width: 70vw;
+  border-radius:20px;
+  transition: top 0.5s ease-in-out;
+  background-color: #333;
+  /* background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  color: #ffffff;
+  padding: 30px;
+  z-index: 100;
+}
+
+.navbar {
+  /* Layout */
+  display: flex;                    /* flex */
+  max-width: fit-content;           /* max-w-fit */
+  position: fixed;                  /* fixed */
+  z-index: 5000;                    /* z-[5000] */
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;                /* mx-auto */
+  margin-right: auto;   
+
+  /* Padding & Border */
+  padding: 1.25rem 2.5rem;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+  border-radius: 0.5rem;
+
+  /* Shadow */
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);;
+
+  background-color: rgba(208, 239, 255, 0.9);
+  backdrop-filter: blur(10px);
+
+  /* Flexbox alignment */
+  align-items: center;              /* items-center */
+  justify-content: center;          /* justify-center */
+
+  transition: top 0.5s ease-in-out;
+
+  cursor:pointer;
+
+}
+
+.navbar > * + * {
+  margin-left: 1rem;
+}
+
+.nav-link {
+  position: relative;        /* relative */
+  display: flex;             /* flex */
+  align-items: center;       /* items-center */
+  color: #525252;            /* text-neutral-600 */
+}
+
+/* Apply horizontal spacing between children (space-x-1 => 0.25rem gap) */
+.nav-link > * + * {
+  margin-left: 0.25rem;
+}
+
+/* Hover state for light mode */
+.nav-link:hover {
+  color: #737373;            /* hover:text-neutral-500 */
+}
+
+.navbar ul {
+  list-style-type:none;
+  justify-content: space-between;
+  display:flex;
+  margin:0 auto;
+}
+
+.navbar.hidden {
+  top: -500px;
+}
+
+.navbar.visible {
+  top: 50px;
+}

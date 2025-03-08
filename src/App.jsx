@@ -3,10 +3,6 @@ import './App.css'
 
 import { BrowserRouter, useRoutes } from 'react-router-dom'
 
-// Analytics
-import { Analytics } from "@vercel/analytics/react"
-import { SpeedInsights } from '@vercel/speed-insights/react';
-
 // Components
 import ScrollToTop from './components/ScrollToTop'
 import NotFound from './sections/NotFound';
@@ -21,6 +17,7 @@ import Research from './sections/Research';
 import Process from './sections/Process';
 import Pages from './sections/Pages';
 import Pro from './sections/Pro';
+
 
 const RouterConfig = () => {
   const routes = [
@@ -54,12 +51,11 @@ const RouterConfig = () => {
 };
 
 const App = () => {
+
   return (
     <>
       <BrowserRouter basename="/">
         <ScrollToTop />
-        <Analytics />
-        <SpeedInsights/>
         <RouterConfig />
       </BrowserRouter>
     </>

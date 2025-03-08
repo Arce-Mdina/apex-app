@@ -1,123 +1,143 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import Logo from '../assets/logo.webp'
 
-import HeroRight from '../components/HeroRight';
-import HeroLeft from '../components/HeroLeft';
+import Hero from '../components/Hero';
 
 import { useNavigate } from 'react-router-dom'
 
 import Section from '../components/Section'
-
 import Footer from '../components/Foot'
-
 import Padding from '../components/Padding'
-
 import Overlay from '../components/Overlay'
+
+import Navbar from '../components/Navbar';
 
 // Icons
 import { faGlobe, faBook, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 
-const Landing = () => {
+import gsap from 'gsap'
 
+import logo from '../assets/logo.webp'
+
+const Landing = () => {
 
   const navigate = useNavigate();
 
   const explanationRef = useRef(null);
 
-  // Function to handle the scroll
-  const scrollToExplanation = () => {
-    explanationRef.current.scrollIntoView({ behavior: 'smooth' });
-  };
+  useEffect(() => {
+    gsap.from(".word", {
+      opacity: 0,
+      y: 20, 
+      duration: 0.7, 
+      stagger: 0.1 
+    })
+  }, [])
 
-  const [domainOverlay, setDomainOverlay] = useState(false)
+  const navItems = [
+    { name: 'Home', link: '/' },
+    { name: 'About', link: '/about' },
+    { name: 'Contact', link: '/contact' },
+  ];
 
-  {/* Domain */}
-  const openDomainOverlay = () => {
-    setDomainOverlay(true);
-  }
-
-  const closeDomainOverlay = () => {
-    setDomainOverlay(false);
-  }
+  
 
   return (
-    <>
+    <div className="App">
 
-      
+      {/* <Navbar/> */}
+
+      <div style={{ padding: "20px" }}></div>
 
       <div className="header">
-        <img src={Logo} className="logo-img"/>
-        <h1>Welcome to <span style={{ color: "brown",  }}>Filfla.eu</span>!</h1>
-        {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Explore our matrix of innnovative projects all crafted from the heart of Europe.</h2>         */}
-        {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Explore the place where our creative imaginations becomes reality.</h2> */}
-        <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Utilising AI to convert creative imaginations into reality.</h2>
-        {/* <h2 style={{ fontWeight: "normal", paddingBottom: "15px", fontFamily: "EB Garamond", color:"gray" }}>Filfla.eu - where innovation meets collaboration.</h2> */}
-        <div className="title-btns">
-          <button className="link-btn link-1" onClick={scrollToExplanation}>Learn more</button>
-          <button className="link-btn link-2" onClick={openDomainOverlay}>Why Filfla?</button>
-          
+        <div style={{ display: "flex", margin: "0 auto", justifyContent: "center", alignItems: "center" }}>
+          <img src={logo} style={{ width: "20px", height: "auto" }}/>
+          &nbsp;
+          <div className="label-heading">Filfla.eu</div>
         </div>
+
+        <div className="heading-wrap">
+          <h1 className="heading">
+            <div>
+              <span className="word">
+                Promoting
+              </span>&nbsp;
+              <span className="word word1">Truths</span>&nbsp;
+              <span className="word">Through</span>&nbsp;
+              <span className="word">Seamless</span>&nbsp;
+              <span className="word">Web</span>&nbsp;
+              <span className="word">Experiences</span>&nbsp;
+            </div>
+          </h1>
+        </div>
+
+        {/* <button className="head-btn">
+          <span className="head-btn-border"></span>
+          <span className="inline-btn-text">
+            Show my projects
+          </span>
+        </button> */}
+
+        <button className="normal-btn" onClick={() => navigate('/projects')}>Explore our network</button>
       </div>
 
+      <div className="card-grid-double">
+        {/* <Hero
+          icon={faGlobe}
+          color="dodgerblue"
+          fontSize={120}
+          title="Discover our network"
+          text={
+            <>
+              Our network covers different fields and ideas, giving you the chance to learn 
+              more about practical solutions and developments. Each project offers something new, 
+              helping you stay informed and engaged in a changing world.
 
-      <div ref={explanationRef}></div>
+              <br></br>
+              <br></br>
+              <button className="standard-btn" onClick={() => navigate('/projects')}>Our projects</button>
+            </>
+          }
+          
+        /> */}
+        <Hero
+          icon={faBook}
+          color="darkgreen"
+          title="Expand your knowledge"
+          fontSize={120}
+          text={
+            <>
+              Explore various initiatives 
+              spanning multiple fields, each designed to make an impact. 
+              Whether you're interested in tech, sustainability, or creative ventures, 
+              Filfla.eu connects you to cutting-edge solutions. 
 
+              <br></br>
+              <br></br>
+              <button className="standard-btn" onClick={() => navigate('/research')}>Our Research</button>
+            </>
+          }
+        />
+        <Hero
+          icon={faLightbulb}
+          color="gold"
+          fontSize={120}
+          title="Create your own ideas"
+          text={
+            <>
+              By exploring Filfla.eu, you’ll gain valuable insights from our network of projects, 
+              which can inspire your own creative ideas. With the information and resources available, 
+              you’ll be able to shape your own unique solutions.
 
-      <HeroRight
-        icon={faGlobe}
-        color="dodgerblue"
-        fontSize={120}
-        title="Discover our network"
-        text={
-          <>
-            Our network covers different fields and ideas, giving you the chance to learn 
-            more about practical solutions and developments. Each project offers something new, 
-            helping you stay informed and engaged in a changing world.
+              <br></br>
+              <br></br>
+              <button className="standard-btn" onClick={() => navigate('/process')}>Our idea process</button>
+            </>
+          }
+        />
+      </div>
 
-            <br></br>
-            <br></br>
-            <button className="standard-btn" onClick={() => navigate('/projects')}>Our projects</button>
-          </>
-        }
-        
-      />
-      <HeroLeft
-        icon={faBook}
-        color="darkgreen"
-        title="Expand your knowledge"
-        fontSize={120}
-        text={
-          <>
-            Explore various initiatives 
-            spanning multiple fields, each designed to make an impact. 
-            Whether you're interested in tech, sustainability, or creative ventures, 
-            Filfla.eu connects you to cutting-edge solutions. 
-
-            <br></br>
-            <br></br>
-            <button className="standard-btn" onClick={() => navigate('/research')}>Our Research</button>
-          </>
-        }
-      />
-      <HeroRight
-        icon={faLightbulb}
-        color="gold"
-        fontSize={120}
-        title="Create your own ideas"
-        text={
-          <>
-            By exploring Filfla.eu, you’ll gain valuable insights from our network of projects, 
-            which can inspire your own creative ideas. With the information and resources available, 
-            you’ll be able to shape your own unique solutions.
-
-            <br></br>
-            <br></br>
-            <button className="standard-btn" onClick={() => navigate('/process')}>Our idea process</button>
-          </>
-        }
-      />
-
-      <Overlay
+      {/* <Overlay
         heading={<>Why I chose <span style={{ color: "brown" }}>Filfla.eu</span></>}
         type={domainOverlay}
         
@@ -131,7 +151,7 @@ const Landing = () => {
             </div>
           </>
         }
-      />
+      /> */}
 
       <Section 
         fontSize="2.5em"
@@ -147,7 +167,7 @@ const Landing = () => {
       />
 
       <Footer />
-    </>
+    </div>
   )
 }
 

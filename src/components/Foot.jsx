@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-column">
           
-          <ul><h3>Filfla.eu's Network</h3>
+          <ul><h3>Quick Links</h3>
             <div style={{ fontWeight: "bold" }}>Basic</div>
             <li>
               <a href="https://malta-guide.filfla.eu">Malta Guide</a>
