@@ -62,7 +62,7 @@ const Landing = () => {
               <span className="word">
                 Promoting
               </span>&nbsp;
-              <span className="word word1">Truths</span>&nbsp;
+              <span className="word word1">Knowledge</span>&nbsp;
               <span className="word">Through</span>&nbsp;
               <span className="word">Seamless</span>&nbsp;
               <span className="word">Web</span>&nbsp;
